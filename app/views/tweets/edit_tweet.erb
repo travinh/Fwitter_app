@@ -1,0 +1,12 @@
+<h1>Change your thinking?</h1>
+
+
+<form action="/tweets/<%= @tweet.id %>" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <label>Your tweet: </label>
+    <input type="text" name="tweet[content]" value="<%= @tweet.content %>">
+    <input type="submit">
+
+
+</form>
+
